@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!--
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp" 
+        />
+    -->
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp" />
+    <!--
+     <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:text=" Ok "
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/dialog_text"
+        />
+    -->
+
+    <Button
+        android:id="@+id/btn_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_text"
+        android:onClick="phone"
+        android:text="@string/phone" />
+
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_phone"
+        android:onClick="sms"
+        android:text="@string/text_msg" />
+
+    <Button
+        android:id="@+id/btn_later"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_sms"
+        android:onClick="later"
+        android:text="@string/later" />
+
+</RelativeLayout>

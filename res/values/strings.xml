@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kissy Talk Time</string>
+    <string name="app_desc">Time to build on your relationship</string>
+    <string name="ktt_settings">Settings</string>
+    
+    
+    <string name="red_string">red_string</string>
+    
+    
+    <string name="ktt_help">Help</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="startButton">Start a delay timer (For testing)</string>
+    <string name="settingsButton">Talk Time Settings</string>
+    <string name="time_to_build_text">Time to build on your relationship.</string>
+    <string name="less">Less Often</string>
+    <string name="later">Maybe Later</string>
+    <string name="more">More Often</string>
+    <string name="ok">OK</string>
+    <string name="frequency_title">Frequency</string>
+    <string name="frequency_verbiage">How often would you like new reminders to occur?</string>
+    <string name="sms_not_set">Not set. Tap to set number for texting.</string>
+    <string name="phone_not_set">Not set. Tap to set phone number.</string>
+    <string name="phone">Phone</string>
+    <string name="call">Call</string>
+    <string name="send">Send</string>
+    <string name="a_text">a text?</string>
+    <string name="text_msg">Text</string>
+    <string name="name_not_set">Not set. Tap to set partners name.</string>
+    <string name="sound_off_on">Use phone notification sounds</string>
+    <string name="use_ktt_bell">Use \'Kissy Talk Time\' bell?</string>
+    <string name="run_ktt">Start the Reminders?.</string>
+    <string name="vibrate">Vibrate on notification.</string>
+    <string name="audible_alert">Audible Alert</string>
+    <string name="select_message">Select message to send</string>
+    <string name="send_a_text_to">Send a text to</string>
+    <string name="customMsg1_not_set">Not set. Tap to put your own reminder custom message here.</string>
+    <string name="customMsg2_not_set">Not set. Tap to put your own reminder custom message here..</string>
+    <string name="customMsg3_not_set">Not set. Tap to put your own reminder custom message here.</string>
+    <string name="smsSendButton">Send</string>
+    <string name="customTextMessage1">Prepared SMS Text Message 1</string>
+    <string name="customTextMessage2">Prepared SMS Text Message 2</string>
+    <string name="customTextMessage3">Prepared SMS Text Message 3</string>
+    <string name="itsTime">It\'s time to build on your relationship\n\n</string>
+    <string name="gettingStartedText">Getting started is easy! \n\nAll you have to do is setup your partners phone number so that you can call or send them a text message.
+         If you wish, you can even adjust how often you want to receive these reminders and suggestions.  
+         \n\nYou can choose to use a distinct notification sound.  
+         \n\nOnce you have completed the settings you can close this app and you will be reminded at random times in the future with relationship building suggestions.
+         \n\n\n"</string>
+    
+    <color name="OldWheat">#FCFF7F</color>
+    <color name="Green">#008000</color>
+    <color name="Black">#000000</color>
+    
+       <string-array name="suggestions_array">
+        <item>Give your partner a loving touch. I.e. Hand on back or shoulder etc&#8230;</item>
+        <item>Share something new of interest with your partner. I.e. \'I just saw or read&#8230; \'</item>
+        <item>Send a text that connects you emotionally. I.e \' I can\'t get enough of my sugar \' </item>
+        <item>Send a text that bonds your sprit with that of your partner. Ie. \" Remember that time&#8230;\" </item>
+        <item>Send an emoticon \n(nothing else)</item>
+        <item>Send a picture or share a funny quote you came across</item>
+        </string-array>
+    
+    
+</resources>

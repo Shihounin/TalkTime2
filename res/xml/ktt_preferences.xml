@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ktt="http://savinkoff.com"
+    android:key="preference_screen"
+    android:title="Preferences" >
+
+    <PreferenceCategory android:title="" >
+        <CheckBoxPreference 
+            android:key="run_checkbox_key" 
+            android:defaultValue="false" 
+                android:drawable="@drawable/heart"
+            
+            android:title="@string/run_ktt"/>
+
+        <EditTextPreference 
+            android:dialogTitle="Enter partners name" 
+            android:inputType="textCapSentences" 
+            android:key="partners_name_key" 
+            android:title="Partners Name" />
+        <EditTextPreference 
+            android:dialogTitle="Enter partners phone number" 
+            android:inputType="number" 
+            android:key="phone_number_key" 
+            android:title="Phone Number" />
+        <CheckBoxPreference 
+            android:defaultValue="true" 
+            android:key="ktt_bell_checkbox_key" 
+            android:title="@string/use_ktt_bell" />
+        <com.savinkoff.ktt.SeekBarPreference
+            android:defaultValue="50"
+            android:key="delayFactor"
+            android:max="100"
+            android:progressDrawable="@xml/progress_drawable"
+            android:thumb="@xml/thumb_drawable"
+            android:summary="@string/frequency_verbiage" 
+             />
+
+        
+        
+        <!--
+        <EditTextPreference
+            android:icon="@drawable/sound"
+            android:title="NOTIFICATION RINGTONE" />
+        -->
+        
+        <!--  -->
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

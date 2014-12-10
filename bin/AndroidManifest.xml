@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.savinkoff.ktt"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <!-- permission required to Send SMS -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+  
+  
+  <!-- 
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version"         />
+ -->
+ 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- 
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+         -->
+         
+        <activity
+            android:name="com.savinkoff.ktt.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.savinkoff.ktt.SettingsActivity"
+            android:label="@string/ktt_settings"
+            android:parentActivityName="com.savinkoff.ktt.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/kttPrefsTheme" >
+            <intent-filter>
+                <action android:name="com.savinkoff.ktt.SettingsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.savinkoff.ktt.AlarmHandler"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:parentActivityName="com.savinkoff.ktt.MainActivity" >
+        </activity>
+       
+        <activity
+            android:name=".SetPreferenceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SendSMSActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".SMSsendFinal"
+            android:label="testLable"
+            android:theme="@style/NoTitleDialog" >
+        </activity>
+
+        <!-- Register the Alarm Receiver -->
+        <receiver android:name=".AlarmReceiver" />
+
+<!--  
+            <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+-->
+        
+        
+    </application>
+
+</manifest>
